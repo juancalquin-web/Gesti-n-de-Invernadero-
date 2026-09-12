@@ -1,0 +1,32 @@
+  body {
+      display: flex;
+      justify-content: center;
+    }
+
+    #login {
+      width: 300px;
+      padding: 20px;
+      margin-top: 80px;
+      background-color: whitesmoke;
+    }
+
+    form input {
+      width: 90%;
+      padding: 8px;
+      border: 1px solid gray;
+    }
+
+    form div {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    button {
+      width: 96%;
+      padding: 10px;
+      background-color: black;
+      color: white;
+    }
