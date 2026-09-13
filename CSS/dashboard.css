@@ -6,7 +6,7 @@
 }
 
 .card {
-  background-color:aliceblue;
+  background-color:whitesmoke;
   border: 1px solid;
   border-radius: 8px;
   padding: 1.5rem;
@@ -14,12 +14,12 @@
 }
 
 .metric-card h3{
-    font-size: 0.8rem;
+    font-size: 1rem;
     color:teal;
 }
 
 .metric-value{
-    font-size: 1rem;
+    font-size: 0.97rem;
     font-weight: bold;
     color:darkslategray;
     margin-top: 0.5rem;
@@ -49,14 +49,6 @@
     text-decoration: none;
 }
 
-.button-primario{
-  background-color:powderblue;
-  color: black;
-}
 
-.button-secundario{
-  background-color: azure;
-  color: black;
-}
 
 

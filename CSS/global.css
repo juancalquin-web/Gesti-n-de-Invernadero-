@@ -26,6 +26,7 @@
     width: 100%;
     display: inline-block;
     text-align: center;
+    color: black;
     background: transparent;
     border: solid;
     border-color:gray;
@@ -35,8 +36,20 @@
 }
 
 .nav-button:hover, .nav-button.active{
-    background-color:lightgray;
-    color: gray;
+    background-color:whitesmoke;
+    color:lightseagreen;
 }
 
+.button-logout{
+    color: rebeccapurple;
+}
 
+.button-primario{
+  background-color:azure;
+  color: black;
+}
+
+.button-secundario{
+  background-color: aliceblue;
+  color: black;
+}

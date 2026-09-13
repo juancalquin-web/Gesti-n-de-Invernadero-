@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="vieport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/admin.css">
+        <link rel="stylesheet" href="CSS/gobal.css">
+        <title>Panel Admin </title>
+    </head>
+    <body>
+        <header class="navbar">
+            <!--Encabezado página admin-->
+            <a href="dashboard.html" class="logo logo-admin">"Logo admin aquí" Gestión Invernaderos</a>
+            <nav class="nav-links">
+                <a href="admin.html" class="nav-button active">Inicio Administrador</a>
+                <a href="login.html" class="nav-button button-logout">Cerrar Sesión</a>
+            </nav>
+        </header>
+
+        <main class="main-container">
+            <h2>Panel de Administración Global</h2>
+
+            <div class="admin-grid">
+                <div class="admin-header-actions">
+                    <h3>Gestión de Usuarios</h3>
+                    <button class="button button-primario" onclick="alert('Esto creará un usuario nuevo vacío')">+ Crear Nuevo Usuario</button>
+                </div>
+
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Correo</th>
+                            <th>Cultivos</th>
+                            <th>Sensores</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Calquín</td>
+                            <td>juan.calquin@mail.udp.cl</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>
+                                <button class="button-action delete" onclick="confirm('¿Eliminar cuenta?')">Eliminar Cuenta</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>
