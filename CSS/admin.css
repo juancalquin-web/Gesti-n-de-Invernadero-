@@ -1,4 +1,4 @@
-.admin_logo{
+.logo_admin{
     color:blue !important;  
     /* !important hace que pueda hacer un cambio sobre algo que ya está definido como excepción, como es la vista de admin, creo que debe tener otro color o algo similar*/
 }
