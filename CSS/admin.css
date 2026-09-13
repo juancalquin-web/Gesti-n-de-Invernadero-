@@ -1,0 +1,82 @@
+.admin_logo{
+    color:blue !important;  
+    /* !important hace que pueda hacer un cambio sobre algo que ya está definido como excepción, como es la vista de admin, creo que debe tener otro color o algo similar*/
+}
+
+.admin-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.metric-card h3{
+    font-size: 1rem;
+    color:teal;
+}
+
+.metric-value{
+    font-size: 0.97rem;
+    font-weight: bold;
+    color:darkslategray;
+    margin-top: 0.5rem;
+}
+
+.admin-header-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;    
+}
+
+.admin-header-actions .button{
+    width: auto;
+}
+
+.admin-table-container{
+    overflow-x: auto;
+    /*Esto permite que se ajuste la tabla si hay demasiadas cosas en el eje x de forma automática, o eso entendí al buscar comando útiles en la página de comandos que nos dió el profe*/
+    margin-top: 2rem;
+}
+
+.admin-filter{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.admin-filter label{
+    font-size: 0.9;
+    color:black;
+}
+
+.admin-filter select{
+    background-color: aliceblue;
+    border: 1px solid;
+    color:black;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+}
+
+.admin-table th, /*así se manipulaban las ranitas por color en Froggy Flexbox c: */
+.admin-table td{
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid;
+}
+
+.admin-table th{
+    color:darkslategray;
+    font-size: 0.85rem;
+}
+
+.button-action delete{
+    background-color: brown;
+    color:black;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    border: solid;
+    cursor: pointer;
+}
