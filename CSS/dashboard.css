@@ -1,0 +1,62 @@
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card {
+  background-color:aliceblue;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.metric-card h3{
+    font-size: 0.8rem;
+    color:teal;
+}
+
+.metric-value{
+    font-size: 1rem;
+    font-weight: bold;
+    color:darkslategray;
+    margin-top: 0.5rem;
+}
+
+.quick-actions{
+    display: flex;
+    gap:1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.button{
+    padding: 0.75rem 1.5rem;
+    border: solid;
+    border-color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.quick-actions .button{
+    width: auto;
+    text-decoration: none;
+}
+
+.button-primario{
+  background-color:powderblue;
+  color: black;
+}
+
+.button-secundario{
+  background-color: azure;
+  color: black;
+}
+
+
