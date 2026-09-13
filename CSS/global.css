@@ -69,3 +69,23 @@ body {
 }
 
 
+.danger-mark{
+    background: lightcoral;
+    color: darkred;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.success-mark{
+    background: lightgreen;
+    color: darkgreen;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.warning-mark{
+    background: lightgoldenrodyellow;
+    color: darkgoldenrod;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
