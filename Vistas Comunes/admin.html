@@ -19,8 +19,14 @@
 
         <main class="main-container">
             <h2>Panel de Administración Global</h2>
-
+            
             <div class="admin-grid">
+            <!--Panel de métricas globales-->
+            <div class="card metric-card"><h3>Total de Usuarios</h3><p class="metric-value">3</p></div>
+
+
+            <!--Gestión de Cuentas y Usuarios-->
+            
                 <div class="admin-header-actions">
                     <h3>Gestión de Usuarios</h3>
                     <button class="button button-primario" onclick="alert('Esto creará un usuario nuevo vacío')">+ Crear Nuevo Usuario</button>
@@ -40,6 +46,24 @@
                         <tr>
                             <td>Juan Calquín</td>
                             <td>juan.calquin@mail.udp.cl</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>
+                                <button class="button-action delete" onclick="confirm('¿Eliminar cuenta?')">Eliminar Cuenta</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Paulina González</td>
+                            <td>paulina.gonzalez10@mail.udp.cl</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>
+                                <button class="button-action delete" onclick="confirm('¿Eliminar cuenta?')">Eliminar Cuenta</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Diego Guzmán</td>
+                            <td>diego.guzman6@mail.udp.cl</td>
                             <td>2</td>
                             <td>4</td>
                             <td>
