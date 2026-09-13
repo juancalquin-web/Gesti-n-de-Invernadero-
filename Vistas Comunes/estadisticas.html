@@ -20,3 +20,53 @@
         </nav>
     </header>
     <!--Este header va en todas las vistas de usuario, excepto admin y login-->
+
+    <main class="main-container">
+        <h2>Historial de Datos de Sensores</h2>
+        <!--Pondré los datos del usuario con menos sensores-->
+
+        <!--CÓMO SE PONE UN GRÁFICO!? O-O -->
+        <!--No sé poner ni imágenes y voy a poner un gráfico, tendré que investigar después-->
+        <!--Tabla tendrá que ser-->
+        <div class="card">
+            <div class="control-datos"> 
+                <div class="filter-datos">
+                    <label for="sensor-pick">Seleccionar Sensor:</label>
+                    <select id="sensor-pick">
+                        <option value="Hum_Suelo_1">Humedad_Suelo_Zona_1 (m^3/m^3)</option>
+                        <option value="Temp_Zona_1">Temperatura_Zona_1 (°C)</option>
+                    </select>
+                </div>
+
+                <div class="filter-datos">
+                    <label for="limit-pick">Mostrar Últimos:</label>
+                    <select id="limit-pick>">
+                        <option value="10">10 registros</option>
+                        <option value="50">50 registros</option>
+                        <option value="100">100 registros</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table class="tabla-datos">
+                    <thead>
+                        <tr>
+                            <th>Fecha y Hora</th>
+                            <th>Sensor</th>
+                            <th>Valor Medido</th>
+                            <th>Estado de Lectura</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>13-09-2026 15:00hrs</td>
+                            
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </main>
