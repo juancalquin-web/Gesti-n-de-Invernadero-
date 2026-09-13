@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Códigode Juan-->
 <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="vieport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/agregar.css">
-        <link rel="stylesheet" href="CSS/gobal.css">
+        <link rel="stylesheet" href="CSS/global.css">
         <title>Crear - Agregar</title>
     </head>
     <body>
@@ -20,3 +20,58 @@
         </nav>
     </header>
     <!--Este header va en todas las vistas de usuario, excepto admin y login-->
+
+    <h1>Crear Nuevo Registro</h1>
+
+    <label for="tipo">¿Qué deseas crear?</label>
+
+    <select id="tipo">
+        <option value="cultivo">Cultivo</option>
+        <option value="sensor">Sensor</option>
+    </select>
+
+    <form id="formCultivo">
+        <div>
+            <label for="nombreCultivo">Nombre</label>
+            <input type="text" id="nombreCultivo" name="nombreCultivo" />
+        </div>
+
+        <div>
+            <label for="tipoCultivo">Tipo</label>
+            <input type="text" id="tipoCultivo" name="tipoCultivo" />
+        </div>
+
+        <div>
+            <label for="fecha">Fecha de cultivo</label>
+            <input type="date" id="fecha" name="fecha" />
+        </div>
+
+        <div>
+            <label for="estacional">Es estacional?</label>
+            <input type="checkbox" id="estacional" name="estacional" />
+        </div>
+
+        <button type="submit">Crear</button>
+    </form>
+
+    <form id="formSensor">
+        <div>
+            <label for="nombreSensor">Nombre</label>
+            <input type="text" id="nombreSensor" name="nombreSensor" />
+        </div>
+
+        <div>
+
+            <label for="descripción">Descripcion</label>
+            <input type="text" id="descripción" name="descripción" />
+        </div>
+
+        <div>
+            <label for="unidad">Unidad</label>
+            <input type="text" id="unidad" name="unidad" />
+        </div>
+
+        <div>
+            <button type="submit">Crear</button>
+        </div>
+    </form>
