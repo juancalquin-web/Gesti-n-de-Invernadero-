@@ -10,7 +10,7 @@
     <body>
     <header class="navbar">
         <!--Encabezado para las páginas-->
-        <a href="dashboard.html" class="logo">"Logo aquí"</a>
+        <a href="dashboard.html" class="logo">"Logo aquí" Gestión de Invernaderos</a>
         <nav class="nav-links">
             <a href="dashboard.html" class="nav-button active">Inicio</a>
             <a href="invernadero.html" class="nav-button">Invernadero</a>
@@ -33,8 +33,8 @@
                 <div class="filter-datos">
                     <label for="sensor-pick">Seleccionar Sensor:</label>
                     <select id="sensor-pick">
-                        <option value="Hum_Suelo_1">Humedad_Suelo_Zona_1 (m^3/m^3)</option>
                         <option value="Temp_Zona_1">Temperatura_Zona_1 (°C)</option>
+                        <option value="Hum_Suelo_1">Humedad_Suelo_Zona_1 (m^3/m^3)</option>
                     </select>
                 </div>
 
@@ -61,8 +61,38 @@
                     
                     <tbody>
                         <tr>
-                            <td>13-09-2026 15:00hrs</td>
-                            
+                            <td>13-09-2026 14:00hrs</td>
+                            <td>Temperatura_Zona_1</td>
+                            <td>35 °C</td>
+                            <td><span class="danger-mark">Alerta Crítica</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>13-09-2026 13:00hrs</td>
+                            <td>Temperatura_Zona_1</td>
+                            <td>28 °C</td>
+                            <td><span class="warning-mark">Precaución</span></td>
+                        </tr>
+
+                         <tr>
+                            <td>13-09-2026 12:00hrs</td>
+                            <td>Temperatura_Zona_1</td>
+                            <td>25 °C</td>
+                            <td><span class="warning-mark">Precaución</span></td>
+                        </tr>
+
+                         <tr>
+                            <td>13-09-2026 11:00hrs</td>
+                            <td>Temperatura_Zona_1</td>
+                            <td>23 °C</td>
+                            <td><span class="success-mark">Normal</span></td>
+                        </tr>
+
+                         <tr>
+                            <td>13-09-2026 10:00hrs</td>
+                            <td>Temperatura_Zona_1</td>
+                            <td>18 °C</td>
+                            <td><span class="success-mark">Normal</span></td>
                         </tr>
                     </tbody>
 

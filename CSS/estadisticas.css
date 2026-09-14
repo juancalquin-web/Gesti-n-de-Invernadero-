@@ -1,0 +1,48 @@
+.control-datos{
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.filter-datos{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filter-datos label{
+    font-size: 0.9;
+    color: black;
+}
+
+.filter-datos select{
+    background-color: aliceblue;
+    border: 1px solid;
+    color:black;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+}
+
+.table-container{
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+
+.tabla-datos{
+    width: 100%;
+    margin-top: 0.5;
+    text-align: left;
+}
+
+.tabla-datos th,
+.tabla-datos td{
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.tabla-datos th{
+    color:darkslategray;
+    font-size: 0.85rem;
+}
