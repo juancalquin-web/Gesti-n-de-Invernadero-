@@ -1,4 +1,4 @@
-.logo_admin{
+.logo-admin{
     color:blue !important;  
     /* !important hace que pueda hacer un cambio sobre algo que ya está definido como excepción, como es la vista de admin, creo que debe tener otro color o algo similar*/
 }
@@ -49,7 +49,7 @@
 }
 
 .admin-filter label{
-    font-size: 0.9;
+    font-size: 0.9rem;
     color:black;
 }
 
@@ -73,7 +73,7 @@
     font-size: 0.85rem;
 }
 
-.button-action delete {
+.button-action.delete {
     background-color: brown;
     color:black;
     padding: 0.25rem 0.5rem;
