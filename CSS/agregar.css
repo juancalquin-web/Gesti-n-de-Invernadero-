@@ -8,13 +8,13 @@ form input {
       margin-bottom: 15px;
     }
 
-    label {
-      font-weight: bold;
+    form .checkbox-field {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
-    button {
-      width: 96%;
-      padding: 10px;
-      background-color: lightgreen;
-      color: black;
+    form.card .checkbox-field input {
+      width: auto;
+      margin: 0;
     }

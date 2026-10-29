@@ -8,15 +8,13 @@
 
 .metric-card h3{
     font-size: 1rem;
-    color:teal;
 }
 
 .metric-value{
-    font-size: 0.97rem;
     font-weight: bold;
-    color:darkslategray;
     margin-top: 0.5rem;
 }
+
 
 .quick-actions{
     display: flex;
@@ -25,16 +23,61 @@
     flex-wrap: wrap;
 }
 
-.button{
-    padding: 0.75rem 1.5rem;
-    border: solid;
-    border-color: black;
+.sensor-status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.sensor-status-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: #f7faf6;
+    border: 1px solid var(--color-border);
     border-radius: 6px;
-    cursor: pointer;
+}
+
+.alert-item {
+    padding: 0.75rem;
+    background: #f7faf6;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+}
+
+.alert-item p {
+    margin: 0;
+}
+
+
+.sensor-status-item strong {
+    font-size: 0.95rem;
+}
+
+.sensor-alerts h3 {
+    margin-top: 0;
+}
+
+.no-alerts {
+    margin-bottom: 0;
+}
+
+.alerts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.button{
     width: 100%;
     display: inline-block;
     text-align: center;
 }
+
 
 
 .quick-actions .button{

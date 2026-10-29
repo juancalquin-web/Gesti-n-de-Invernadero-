@@ -1,17 +1,123 @@
+:root {
+    --color-primary: #16834A;
+    --color-primary-dark: #105C34;
+    --color-page: #F3F8EF;
+    --color-surface: #FFFFFF;
+    --color-border: #C6DDCA;
+    --color-text: #20352A;
+    --color-muted: #4B6652;
+    --color-accent: #A6C936;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--color-page);
+    color: var(--color-text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-surface);
+    box-shadow: 0 2px 8px rgba(29, 68, 47, 0.06);
 }
+
+.main-container {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 2rem auto;
+    flex: 1;
+}
+
+h1, h2, h3 {
+    color: var(--color-text);
+    line-height: 1.25;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+label {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+input, select, textarea {
+    max-width: 100%;
+    padding: 0.65rem 0.75rem;
+    color: var(--color-text);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font: inherit;
+}
+
+button, .button {
+    padding: 0.65rem 1rem;
+    color: var(--color-primary-dark);
+    background: #E3F4E7;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button:hover, .button:hover {
+    background: #D0EBCF;
+}
+
+a {
+    color: var(--color-primary-dark);
+}
+
+.admin-table, .tabla-datos, .tabla-cultivos, .tabla-sensores {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-surface);
+}
+
+.admin-table th, .admin-table td,
+.tabla-datos th, .tabla-datos td,
+.tabla-cultivos th, .tabla-cultivos td,
+.tabla-sensores th, .tabla-sensores td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.admin-table th, .tabla-datos th,
+.tabla-cultivos th, .tabla-sensores th {
+    color: var(--color-primary-dark);
+    background: #DDF1E1;
+    font-weight: 600;
+}
+
 
 .logo{
     text-align: center;
     font-size: 1.05rem;
     font-weight: bold;
-    color:black;
     text-decoration:none;
+}
+
+
+.navbar-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle,
+.menu-toggle-label {
+    display: none;
 }
 
 .nav-links{
@@ -26,33 +132,12 @@
     width: 100%;
     display: inline-block;
     text-align: center;
-    color: black;
     background: transparent;
-    border: solid;
-    border-color:gray;
     border-radius: 6px;
     font-weight: 500;
     transition: all 0.2s;
 }
 
-.nav-button:hover, .nav-button.active{
-    background-color:whitesmoke;
-    color:lightseagreen;
-}
-
-.button-logout{
-    color: rebeccapurple;
-}
-
-.button-primario{
-  background-color:azure;
-  color: black;
-}
-
-.button-secundario{
-  background-color: aliceblue;
-  color: black;
-}
 
 body {
   display: flex;
@@ -61,7 +146,6 @@ body {
 }
 
 .card {
-  background-color:whitesmoke;
   border: 1px solid;
   border-radius: 8px;
   padding: 1.5rem;
@@ -69,23 +153,134 @@ body {
 }
 
 
+
 .danger-mark{
-    background: lightcoral;
-    color: darkred;
+    /*background: #f08080;
+    color: #8b0000;*/
+    background: #FCE8E6;
+    color: #8A2923;
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
 }
 
 .success-mark{
-    background: lightgreen;
-    color: darkgreen;
+    /*background: lightgreen;
+    color: darkgreen;*/
+    background: #E5F0E8;
+    color: #1E4D37;
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
 }
 
 .warning-mark{
-    background: rgb(255, 255, 202);
-    color: rgb(134, 98, 9);
+    
+    /*background: rgb(255, 255, 202);
+    color: rgb(134, 98, 9);*/
+    background: #FFF3D6;
+    color: #74520A;
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
+}
+
+.logo {
+    color: var(--color-primary-dark);
+}
+
+.nav-button {
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    text-decoration: none;
+}
+
+.nav-button:hover, .nav-button.active {
+    background-color: #DDF1E1;
+    color: var(--color-primary-dark);
+    border-color: #8DBF98;
+}
+
+.button-logout {
+    color: var(--color-primary-dark);
+}
+
+.button-primario {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+}
+
+.button-primario:hover {
+    background: var(--color-primary-dark);
+    color: white;
+}
+
+.button-secundario {
+    background: #EAF5C9;
+    border-color: #C5D98A;
+    color: var(--color-primary-dark);
+}
+
+.card {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+  box-shadow: 0 3px 12px rgba(29, 68, 47, 0.05);
+}
+
+.metric-card {
+    border-top: 4px solid var(--color-accent);
+}
+
+.metric-card h3 {
+    color: var(--color-primary);
+}
+
+.metric-value {
+    color: var(--color-primary-dark);
+    font-size: 1.5rem;
+}
+
+form.card {
+    display: grid;
+    gap: 0.75rem;
+}
+
+form.card input {
+    width: 100%;
+}
+
+form.card button {
+    width: auto;
+    justify-self: start;
+    background: var(--color-primary);
+    color: white;
+}
+
+form.card button:hover {
+    background: var(--color-primary-dark);
+}
+
+.table-container, .admin-table-container {
+    overflow-x: auto;
+}
+
+.admin-table-container {
+    margin-top: 1.5rem;
+}
+
+.admin-filter select, .filter-datos select {
+    min-width: 150px;
+}
+
+@media (max-width: 720px) {
+    .menu-toggle,
+    .menu-toggle-label {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle:checked + .menu-toggle-label + .nav-links {
+        display: flex;
+    }
 }

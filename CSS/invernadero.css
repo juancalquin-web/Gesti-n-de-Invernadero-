@@ -1,13 +1,28 @@
 .tabla-cultivos th,
-.tabla-cultivos td{
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid;
+.tabla-cultivos td,
+.tabla-sensores th,
+.tabla-sensores td {
     text-align: center;
 }
 
-.tabla-sensores th,
-.tabla-sensores td{
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid;
-    text-align: center;
+
+.actions-cell {
+    white-space: nowrap;
+}
+
+.action-button {
+    margin: 0.15rem;
+    padding: 0.4rem 0.65rem;
+    font-size: 0.9rem;
+}
+
+.action-button.edit {
+    background: #EAF5C9;
+    border-color: #C5D98A;
+}
+
+.action-button.delete {
+    background: #FCE8E6;
+    border-color: #E9B8B3;
+    color: #8A2923;
 }
