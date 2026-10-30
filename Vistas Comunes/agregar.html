@@ -21,61 +21,80 @@
     </header>
     <!--Este header va en todas las vistas de usuario, excepto admin y login-->
 
-    <h1>Crear Nuevo Registro</h1>
+        <main class = "main-container">
+            <h1>Crear Nuevo Registro</h1>
 
-    <label for="tipo">¿Qué deseas crear?</label>
+            <div class="card">
+                <label for="tipo">¿Qué deseas crear?</label>
 
-    <select id="tipo">
-        <option value="cultivo">Cultivo</option>
-        <option value="sensor">Sensor</option>
-    </select>
+                <select id="tipo">
+                    <option value="cultivo">Cultivo</option>
+                    <option value="sensor">Sensor</option>
+                </select>
+            </div>
 
-    <form id="formCultivo">
-        <div>
-            <label for="nombreCultivo">Nombre</label>
-            <input type="text" id="nombreCultivo" name="nombreCultivo" />
-        </div>
+            <form id="formCultivo" class="card">
+                <div>
+                    <label for="nombreCultivo">Nombre</label>
+                    <input type="text" id="nombreCultivo" name="nombreCultivo" placeholder="Ej: Tomate Cherry" />
+                </div>
 
-        <div>
-            <label for="tipoCultivo">Tipo</label>
-            <input type="text" id="tipoCultivo" name="tipoCultivo" />
-        </div>
+                <div>
+                    <label for="tipoCultivo">Tipo</label>
+                    <input type="text" id="tipoCultivo" name="tipoCultivo" placeholder="Ej: Alimentario, Flor, etc." />
+                </div>
 
-        <div>
-            <label for="fecha">Fecha de cultivo</label>
-            <input type="date" id="fecha" name="fecha" />
-        </div>
+                <div>
+                    <label for="fecha">Fecha de cultivo</label>
+                    <input type="date" id="fecha" name="fecha" />
+                </div>
 
-        <div>
-            <label for="estacional">Es estacional?</label>
-            <input type="checkbox" id="estacional" name="estacional" />
-        </div>
+                <div>
+                    <label for="estacional">Es estacional?</label>
+                    <input type="checkbox" id="estacional" name="estacional" />
+                </div>
 
-        <button type="submit">Crear</button>
-    </form>
+                <button type="submit">Guardar Cultivo</button>
+            </form>
 
-    <br/>
+            <br/>
 
-    <form id="formSensor">
-        <div>
-            <label for="nombreSensor">Nombre</label>
-            <input type="text" id="nombreSensor" name="nombreSensor" />
-        </div>
+            <form id="formSensor" class="card">
+                <div>
+                    <label for="nombreSensor">Nombre</label>
+                    <input type="text" id="nombreSensor" name="nombreSensor" placeholder="Ej: Temp_Suelo_A, Hum_Suelo_C, etc." />
+                </div>
 
-        <div>
+                <div>
 
-            <label for="descripción">Descripcion</label>
-            <input type="text" id="descripción" name="descripción" />
-        </div>
+                    <label for="descripción">Descripcion</label>
+                    <input type="text" id="descripción" name="descripción" placeholder="Ubicación y detalles del sensor." />
+                </div>
 
-        <div>
-            <label for="unidad">Unidad</label>
-            <input type="text" id="unidad" name="unidad" />
-        </div>
+                <div>
+                    <label for="unidad">Unidad</label>
+                    <input type="text" id="unidad" name="unidad" placeholder="Ej: %, °C, ppm, etc." />
+                </div>
 
-        <div>
-            <button type="submit">Crear</button>
-        </div>
-    </form>
+                <div>
+                    <button type="submit">Guardar Recurso</button>
+                </div>
+            </form>
+        </main>
+
+        <script>
+            const selectorTipo = document.getElementById('tipo');
+            const formularioCultivo = document.getElementById('formCultivo');
+            const formularioSensor = document.getElementById('formSensor');
+
+            function actualizarFormulario(){
+                const mostrarCultivo = selectorTipo.value == 'cultivo';
+                formularioCultivo.hidden = !mostrarCultivo;
+                formularioSensor.hidden = mostrarCultivo;
+            }
+
+            selectorTipo.addEventListener('change', actualizarFormulario);
+            actualizarFormulario();
+        </script>
     </body>
 </html>

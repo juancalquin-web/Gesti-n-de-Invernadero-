@@ -1,7 +1,5 @@
-form input {
-      width: 90%;
-      padding: 8px;
-      border: 1px solid gray;
+form.card[hidden] {
+  display: none;
     }
 
     form div {
